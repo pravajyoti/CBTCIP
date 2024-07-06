@@ -68,49 +68,5 @@ def main_window():
     start = Button(win,image=img2, command=save_file)
     start.place(x=170,y=410,height=150,width=150)
 
-
-
-
-              
-
-
-
-    win.mainloop()
-
+ win.mainloop()
 main_window()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-"""def savefile(sec, path):
-    print("Start")
-    try: 
-        # Record audio
-        print("Recording...")
-        recd = sd.rec(int(sec * 44100), samplerate=44100, channels=2)
-        print("Waiting for recording to finish...")
-        sd.wait()
-        print("Saving file...")
-        # Save recorded audio to a WAV file
-        write(path, 44100, recd)
-        print("End")
-    except Exception as e:
-        print(f"An error occurred: {e}")
-
-# Call the function with desired parameters
-savefile(10,"demo.wav") """
