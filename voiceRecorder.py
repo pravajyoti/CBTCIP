@@ -1,15 +1,3 @@
-"""import sounddevice as sd
-from scipy.io.wavfile import write
-
-def savefile(sec,path):
-    print("Start")
-    recd = sd.rec(int(sec*44100), samplerate=44100, channels=2)
-    sd.wait()
-    write(path, 44100,recd)
-    print("End")
-
-    savefile(10, "demo.wav") """
-
 import sounddevice as sd
 from scipy.io.wavfile import write
 from tkinter import *
@@ -68,5 +56,5 @@ def main_window():
     start = Button(win,image=img2, command=save_file)
     start.place(x=170,y=410,height=150,width=150)
 
- win.mainloop()
+    win.mainloop()
 main_window()
